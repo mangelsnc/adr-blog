@@ -6,7 +6,6 @@ use App\Domain\Entity\Author;
 use App\Domain\Module\Author\Domain\AuthorAlreadyExistsException;
 use App\Domain\Module\Author\Domain\AuthorNotFoundException;
 use App\Domain\Module\Author\Domain\AuthorRepository;
-use Doctrine\Common\Collections\Collection;
 use Doctrine\DBAL\Exception\UniqueConstraintViolationException;
 use Doctrine\ORM\EntityRepository;
 
