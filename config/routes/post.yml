@@ -1,0 +1,19 @@
+get_posts:
+  path: /posts
+  methods: [GET]
+  controller: App\Action\Post\GetPostsAction
+
+get_post:
+  path: /posts/{id}
+  methods: [GET]
+  controller: App\Action\Post\GetPostAction
+
+create_post:
+  path: /posts
+  methods: [POST]
+  controller: App\Action\Post\CreatePostAction
+
+delete_post:
+  path: /posts/{id}
+  methods: [DELETE]
+  controller: App\Action\Post\DeletePostAction

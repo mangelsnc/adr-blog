@@ -1,0 +1,25 @@
+App\Domain\Entity\Author:
+    type: entity
+    table: Authors
+
+    id:
+        id:
+            type: string
+            length: 36
+            generator: { strategy: NONE }
+    fields:
+        createdAt:
+            type: datetime
+
+        name:
+            type: string
+            length: 255
+
+    oneToMany:
+        posts:
+            targetEntity: App\Domain\Entity\Post
+            cascade: [ persist, remove ]
+            mappedBy: author
+
+
+    repositoryClass: App\Domain\Module\Author\Infrastructure\AuthorRepositoryMySql

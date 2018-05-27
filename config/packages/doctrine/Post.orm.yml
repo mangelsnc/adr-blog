@@ -1,0 +1,32 @@
+App\Domain\Entity\Post:
+    type: entity
+    table: Posts
+    indexes:
+        author_index:
+            columns: [ author_id ]
+    id:
+        id:
+            type: string
+            length: 36
+            generator: { strategy: NONE }
+    fields:
+        createdAt:
+            type: datetime
+
+        title:
+            type: string
+            length: 255
+
+        content:
+            type: text
+
+
+    manyToOne:
+        author:
+            targetEntity: App\Domain\Entity\Author
+            joinColumn:
+                column_name: author_id
+                referencedColumnName: id
+                nullable: false
+
+    repositoryClass: App\Domain\Module\Post\Infrastructure\PostRepositoryMySql

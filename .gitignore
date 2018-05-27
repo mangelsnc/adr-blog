@@ -1,0 +1,57 @@
+
+###> symfony/framework-bundle ###
+/.env
+/public/bundles/
+/var/
+/vendor/
+###< symfony/framework-bundle ###
+
+###> symfony/web-server-bundle ###
+/.web-server-pid
+###< symfony/web-server-bundle ###
+
+###> phpstorm
+.idea/
+
+###> textmate
+*.tmproj
+*.tmproject
+tmtags
+
+###> sublimetext
+/*.sublime-project
+*.sublime-workspace
+
+###> netbeans
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+
+###> VS Code
+.vscode
+
+###> Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+###> Vagrant
+.vagrant
+*~
+
+###> Mac OS X
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+
+.php_cs
+.php_cs.cache

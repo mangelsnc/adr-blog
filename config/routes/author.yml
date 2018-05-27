@@ -1,0 +1,19 @@
+get_authors:
+  path: /authors
+  methods: [GET]
+  controller: App\Action\Author\GetAuthorsAction
+
+get_author:
+  path: /authors/{id}
+  methods: [GET]
+  controller: App\Action\Author\GetAuthorAction
+
+create_author:
+  path: /authors
+  methods: [POST]
+  controller: App\Action\Author\CreateAuthorAction
+
+delete_author:
+  path: /authors/{id}
+  methods: [DELETE]
+  controller: App\Action\Author\DeleteAuthorAction
