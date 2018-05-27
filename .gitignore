@@ -55,3 +55,8 @@ Icon
 
 .php_cs
 .php_cs.cache
+
+###> symfony/phpunit-bridge ###
+.phpunit
+/phpunit.xml
+###< symfony/phpunit-bridge ###
