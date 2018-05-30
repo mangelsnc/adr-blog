@@ -50,7 +50,7 @@ src
 |  |     |  |__  CreatePost
 |  |     |  |__  DeletePost
 |  |     |  |__  GetPost
-|  |     |  |__  GetPost
+|  |     |  |__  GetPosts
 |  |     |  
 |  |     |__  Domain
 |  |     |__  Infratructure
